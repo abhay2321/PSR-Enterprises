@@ -48,7 +48,8 @@ export default function Cart() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+
+        {/* //! Header */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-3xl font-bold text-gray-900">Shopping Cart</h1>
@@ -65,13 +66,15 @@ export default function Cart() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Cart Items */}
+
+          {/*  //! Cart Items */}
           <div className="lg:col-span-2 space-y-4">
             {cartItems.map((item) => (
               <Card key={item.id} className="overflow-hidden">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    {/* Product Image */}
+
+                    {/*   //! Product Image */}
                     <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg w-20 h-20 flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <img 
                         src={item.image} 
@@ -84,7 +87,7 @@ export default function Cart() {
                       />
                     </div>
 
-                    {/* Product Details */}
+                    {/* //! Product Details */}
                     <div className="flex-grow">
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">
                         {item.name}
@@ -97,7 +100,7 @@ export default function Cart() {
                       </Badge>
                     </div>
 
-                    {/* Price and Quantity Controls */}
+                    {/*   //! Price and Quantity Controls */}
                     <div className="flex flex-col items-end space-y-2">
                       <div className="text-right">
                         <div className="text-xl font-bold text-green-600">
@@ -108,7 +111,7 @@ export default function Cart() {
                         </div>
                       </div>
 
-                      {/* Quantity Controls */}
+                      {/*   //! Quantity Controls */}
                       <div className="flex items-center space-x-2">
                         <Button
                           variant="outline"
@@ -129,7 +132,7 @@ export default function Cart() {
                         </Button>
                       </div>
 
-                      {/* Remove Button */}
+                      {/*   //! Remove Button */}
                       <Button
                         variant="ghost"
                         size="sm"
@@ -144,7 +147,7 @@ export default function Cart() {
               </Card>
             ))}
 
-            {/* Clear Cart Button */}
+            {/* //! Clear Cart Button */}
             <div className="text-center pt-4">
               <Button
                 variant="outline"
@@ -157,7 +160,7 @@ export default function Cart() {
             </div>
           </div>
 
-          {/* Order Summary */}
+          {/*   //! Order Summary */}
           <div className="lg:col-span-1">
             <Card className="sticky top-8">
               <CardHeader>
